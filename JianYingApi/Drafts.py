@@ -85,6 +85,9 @@ class Projects():
 def Create_New_Drafts(path:os.PathLike)->Projects:
     # 创建新草稿
     if os.path.exists(path=path) == False: os.mkdir(path=path)
-    shutil.copy("./blanks/draft_content.json",path)
-    shutil.copy("./blanks/draft_meta_info.json",path)
+
+    shutil.copy(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'blanks/draft_content.json'), path)
+    shutil.copy(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'blanks/draft_meta_info.json'), path)
+    # shutil.copy("./blanks/draft_content.json",path)
+    # shutil.copy("./blanks/draft_meta_info.json",path)
     return Projects(Path=path)

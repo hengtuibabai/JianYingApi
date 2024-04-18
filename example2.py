@@ -4,7 +4,7 @@ import JianYingApi  , uuid
 #########Step1 新建视频项目
 
 # d = JianYingApi.Drafts.Create_New_Drafts(r"d:\JianyingPro Drafts/草稿2") # Create New Project
-d = JianYingApi.Drafts.Create_New_Drafts(r"d:\JianyingPro Drafts/PulpFiction") # Create New Project
+d = JianYingApi.Drafts.Create_New_Drafts(r"d:\JianyingPro Drafts/PulpFiction2") # Create New Project
 
 # Create Two Tracks
 text1_track = d.Content.NewTrack(TrackType="text")

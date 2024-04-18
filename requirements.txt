@@ -1,6 +1,6 @@
 uiautomation
 pyautogui
-PIL
+#PIL
 wheel
 requests 
 pillow
